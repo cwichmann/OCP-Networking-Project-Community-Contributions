@@ -32,6 +32,10 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
 *  Next hop group type
 */
@@ -194,6 +198,10 @@ typedef struct _sai_next_hop_group_api_t
     sai_remove_next_hop_from_group_fn   remove_next_hop_from_group;
 
 } sai_next_hop_group_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAINEXTHOPGROUP_H_
 

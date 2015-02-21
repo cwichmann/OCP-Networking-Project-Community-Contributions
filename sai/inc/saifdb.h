@@ -33,6 +33,9 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /*
 *  FDB entry type.
@@ -265,5 +268,9 @@ typedef struct _sai_fdb_api_t
     sai_flush_all_fdb_entries_by_port_vlan_fn   flush_all_fdb_entries_by_port_vlan;
 
 } sai_fdb_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAIFDB_H_

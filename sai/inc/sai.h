@@ -45,6 +45,10 @@
 #include <saiacl.h>
 #include <saihostintf.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
 *
 * Defined API sets have assigned ID's. If specific api method table changes
@@ -176,4 +180,9 @@ sai_log_set(
     _In_ sai_api_t sai_api_id,
     _In_ sai_log_level_t log_level
     );
+
+#ifdef __cplusplus
+}
+#endif
+
 #endif  // __SAI_H_

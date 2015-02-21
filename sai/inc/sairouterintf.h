@@ -32,6 +32,10 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
 *  Attribute data for SAI_ROUTER_INTERFACE_ATTR_TYPE
 */
@@ -175,6 +179,10 @@ typedef struct _sai_router_interface_api_t
     sai_get_router_interface_attribute_fn   get_router_interface_attribute;
 
 } sai_router_interface_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAIROUTERINTF_H_
 

@@ -32,6 +32,11 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 typedef enum _sai_acl_stage_t 
 {
     /* Ingress Stage */
@@ -648,6 +653,10 @@ typedef struct _sai_acl_api_t
     sai_get_acl_counter_attribute_fn    get_acl_counter_attribute;
 
 } sai_acl_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAIACL_H_
 

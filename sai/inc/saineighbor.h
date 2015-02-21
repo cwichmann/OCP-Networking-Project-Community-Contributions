@@ -33,6 +33,10 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
 *  Attribute Id for sai neighbor object
 */
@@ -162,6 +166,10 @@ typedef struct _sai_neighbor_api_t
     sai_remove_all_neighbor_entries_fn  remove_all_neighbor_entries;
 
 } sai_neighbor_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAINEIGHBOR_H_
 

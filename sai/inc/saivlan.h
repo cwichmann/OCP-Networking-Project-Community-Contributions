@@ -32,6 +32,10 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define VLAN_COUNTER_SET_DEFAULT    0
 
 /*
@@ -252,5 +256,9 @@ typedef struct _sai_vlan_api_t
     sai_get_vlan_stats_fn           get_vlan_stats;
     
 } sai_vlan_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAIVLAN_H_

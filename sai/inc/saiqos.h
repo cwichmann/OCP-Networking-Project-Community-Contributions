@@ -32,6 +32,10 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef enum _sai_cos_port_trust_t {
 
     /* Do not trust packet fields for setting CoS */
@@ -204,6 +208,9 @@ typedef struct _sai_qos_api_t
 
 } sai_qos_api_t;
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAIQOS_H_
 

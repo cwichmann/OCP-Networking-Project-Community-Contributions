@@ -32,6 +32,10 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
 *  Attribute data for SAI_PORT_ATTR_TYPE
 */
@@ -387,6 +391,10 @@ typedef struct _sai_port_api_t
     sai_get_port_stats_fn           get_port_stats;
 
 } sai_port_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAIPORT_H_
 

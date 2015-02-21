@@ -32,6 +32,10 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
 *  Attribute Id for sai route object
 */
@@ -156,5 +160,9 @@ typedef struct _sai_route_api_t
     sai_get_route_attribute_fn  get_route_attribute;
 
 } sai_route_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAIROUTE_H_

@@ -32,6 +32,9 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /*
 *  Next hop type
@@ -157,5 +160,9 @@ typedef struct _sai_next_hop_api_t
     sai_get_next_hop_attribute_fn get_next_hop_attribute;
 
 } sai_next_hop_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAINEXTHOP_H_

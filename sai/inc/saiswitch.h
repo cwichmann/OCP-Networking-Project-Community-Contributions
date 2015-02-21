@@ -31,8 +31,12 @@
 #define __SAISWITCH_H_
 
 #include <saitypes.h>
-#include "saiport.h"
-#include "saifdb.h"
+#include <saiport.h>
+#include <saifdb.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 
 #define SAI_MAX_HARDWARE_ID_LEN         255
@@ -366,5 +370,9 @@ typedef struct _sai_switch_api_t
     sai_get_switch_attribute_fn     get_switch_attribute;
 
 } sai_switch_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif  // __SAISWITCH_H_

@@ -35,6 +35,11 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* The host interface name size includes the null byte */
 #define HOST_INTERFACE_NAME_SIZE    16
 
 /*
@@ -164,5 +169,9 @@ typedef struct _sai_host_interface_api_t
     sai_get_host_interface_attribute_fn   get_host_interface_attribute;
 
 } sai_host_interface_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAIHOSTINTF_H_

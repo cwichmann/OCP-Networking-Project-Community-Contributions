@@ -34,6 +34,10 @@
 
 #include <saitypes.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
 *  Attribute Id in sai_set_virtual_router_attribute() and 
 *  sai_get_virtual_router_attribute() calls
@@ -149,5 +153,9 @@ typedef struct _sai_virtual_router_api_t
     sai_get_virtual_router_attribute_fn get_virtual_router_attribute;
 
 } sai_virtual_router_api_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // __SAIROUTER_H_
